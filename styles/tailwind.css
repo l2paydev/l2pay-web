@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+    * {
+        @apply subpixel-antialiased motion-safe:transition-colors;
+    }
+
+    html,
+    body {
+        @apply size-full [scrollbar-gutter:auto];
+        scroll-behavior: smooth;
+    }
+
+    .layout-container {
+        @apply w-[calc(100vw-48px)] max-w-screen-xl
+    }
+
+}
